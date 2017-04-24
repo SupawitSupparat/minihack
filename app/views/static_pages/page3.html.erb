@@ -1,0 +1,52 @@
+<h1>Activity3</h1>
+<p>
+    1)  function restartGame() {<br>
+            document.getElementById("myfilter").style.display = "none";<br>
+            document.getElementById("myrestartbutton").style.display = "none";<br>
+            myGameArea.stop();<br>
+            myGameArea.clear();<br>
+            myGameArea = {};<br>
+            myGamePiece = {};<br>
+            myObstacles = [];<br>
+            myscore = {};<br>
+            document.getElementById("canvascontainer").innerHTML = "";<br>
+            startGame();<br>
+              myGameArea.start();<br>
+        }<br>
+        <br>
+        For first question we just move myGameArea.start for StartGame to restartGame. So it will  wait until we click resttart button.<br>
+        <br>
+        2)   myGamePiece = new component(30, 30, "blue", 10, 75);<br>
+                  myGameArea.start();<br>
+                  <br>
+             myObstacles.push(new component(10, height, "yellow", x, 0));<br>
+             myObstacles.push(new component(10, x - height - gap, "yellow", x, height + gap));<br>
+        <br>
+        For this question we just go and change the setting color to the color that we want.<br>
+        <br>
+        3)   function pauseGame(){ <br>
+          if(myGameArea.pause==false){<br>
+<br>
+            myGameArea.stop();<br>
+<br>
+          }else{<br>
+<br>
+<br>
+              myGameArea.start();<br>
+<br>
+          }<br>
+        }<br>
+        
+      <button onclick="pauseGame()">stop</button><br>
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+        </p>
