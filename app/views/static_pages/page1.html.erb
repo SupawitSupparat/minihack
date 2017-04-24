@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<body>
+<b >
+  MINI-HACK
+</b>
+<ul>
+  <li><a onclick="show('operation1')" class="active" href="#home">MAIN</a></li>
+  <li><a onclick="show('operation2')" href="#news">ACTIVITY1</a></li>
+  <li><a onclick="show('operation3')" href="#contact">ACTIVITY2</a></li>
+  <li><a onclick="show('operation4')" href="#contact">ACTIVITY3</a></li>
+</ul>
+
+<c id="main_place">
+  MINI-HACK
+</c>
+
+<p>
+
+</p>
+
+<r class = "hidden">
+<div id=operation1 >
+MINI HACK
+</div>
+
+<div id=operation2 style=“display: block;”>
+  <p>
+
+  Activity 1.1
+
+  </p>
+
+   <k href="http://uppic.sodazaa.com/share.php?id=68A6_58FDC533"><img src="http://uppic.sodazaa.com/image.php?id=68A6_58FDC533&jpg" border="0"></k>
+
+</div>
+
+
+<div id=operation3 >
+  <h1>Activity2</h1>
+
+<p>
+2)<a href="http://uppic.sodazaa.com/share.php?id=F2D1_58FDCD5D"><img src="http://uppic.sodazaa.com/thumb.php?id=F2D1_58FDCD5D" border="0"></a><br><br>
+
+3) <a href="http://uppic.sodazaa.com/share.php?id=B659_58FDCD5D"><img src="http://uppic.sodazaa.com/thumb.php?id=B659_58FDCD5D" border="0"></a>
+To insert the picture before Instructor “Serena Yeung" We go to the html element by right click the screen and chose inspect<br>
+after that we find the container of the instructor. After finding the container we going to find the instructor Serena Yeung <br>
+after that we edit the div of Serena Yeung by copy the html code of instructor and paste it under Serena div after that we edit the name and the photo to what we want. <br>
+
+
+4)I think the class that change all the time is class "actmap" because this is the main picture for other layer,<br>
+ so if there will be a changing code it need to be here.<br>
+
+ For the code I think this code might be use because I already think that it need to use math.random so when I find this code I think it might be it.<br>
+
+  function shuffle(o) {<br>
+    for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);<br>
+    return o;<br>
+}<br>
+
+
+5) After Random picture, the picture will be manipulate by using CIFAR-10 which is a javascipt code I know this from clicking "?" button<br>
+and it told me that it use this method. <br> </p>
+
+
+6)set g.data to g.data[0,0,255,255]. Change green[0,255,0,255] to blue [0,0,255,255];
+"<a href="http://uppic.sodazaa.com/share.php?id=988A_58FDCF0D"><img src="http://uppic.sodazaa.com/thumb.php?id=988A_58FDCF0D" border="0"></a><br>"
+</div>
+
+
+<div id=operation4 >
+  <h1>Activity3</h1>
+  <p>
+      1)  function restartGame() {<br>
+              document.getElementById("myfilter").style.display = "none";<br>
+              document.getElementById("myrestartbutton").style.display = "none";<br>
+              myGameArea.stop();<br>
+              myGameArea.clear();<br>
+              myGameArea = {};<br>
+              myGamePiece = {};<br>
+              myObstacles = [];<br>
+              myscore = {};<br>
+              document.getElementById("canvascontainer").innerHTML = "";<br>
+              startGame();<br>
+                myGameArea.start();<br>
+          }<br>
+          <br>
+          For first question we just move myGameArea.start for StartGame to restartGame. So it will  wait until we click resttart button.<br>
+          <br>
+          2)   myGamePiece = new component(30, 30, "blue", 10, 75);<br>
+                    myGameArea.start();<br>
+                    <br>
+               myObstacles.push(new component(10, height, "yellow", x, 0));<br>
+               myObstacles.push(new component(10, x - height - gap, "yellow", x, height + gap));<br>
+          <br>
+          For this question we just go and change the setting color to the color that we want.<br>
+          <br>
+          3)   function pauseGame(){ <br>
+            if(myGameArea.pause==false){<br>
+  <br>
+              myGameArea.stop();<br>
+  <br>
+            }else{<br>
+  <br>
+  <br>
+                myGameArea.start();<br>
+  <br>
+            }<br>
+          }<br>
+
+        <button onclick="pauseGame()">stop</button><br>
+
+
+
+
+
+
+</p>
+</div>
+
+</r>
+</body>
+
+</html>
+
+<script>
+  function show(param_div_id) {
+    document.getElementById('main_place').innerHTML = document.getElementById(param_div_id).innerHTML;
+  }
+</script>
+
+
+<style>
+
+body{
+  background-color: #98AFC7;
+}
+
+r.hidden {
+    visibility: hidden;
+}
+
+b{
+  padding-right:  1135px;
+  background-color: grey;
+  font-size: 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+</style>

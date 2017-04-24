@@ -1,3 +1,11 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+get 'static_pages/page1'
+
+get 'static_pages/page2'
+
+get 'static_pages/page3'
+
+root 'application#hello'
+
 end
